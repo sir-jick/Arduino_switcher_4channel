@@ -1,0 +1,450 @@
+
+C:\Users\Sir_Jick\AppData\Local\Temp\arduino_build_101485/sketch_may10a.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+C:\Users\Sir_Jick\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/pcrt.S:20
+  .endm
+
+  .section .vectors
+  .global __vectors
+__vectors:
+  rjmp __init
+   0:	0a c0       	rjmp	.+20     	; 0x16 <__ctors_end>
+C:\Users\Sir_Jick\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/pcrt.S:21
+  vector __vector_1
+   2:	08 c0       	rjmp	.+16     	; 0x14 <__empty_interrupt>
+C:\Users\Sir_Jick\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/pcrt.S:22
+  vector __vector_2
+   4:	07 c0       	rjmp	.+14     	; 0x14 <__empty_interrupt>
+C:\Users\Sir_Jick\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/pcrt.S:23
+  vector __vector_3
+   6:	06 c0       	rjmp	.+12     	; 0x14 <__empty_interrupt>
+C:\Users\Sir_Jick\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/pcrt.S:24
+  vector __vector_4
+   8:	05 c0       	rjmp	.+10     	; 0x14 <__empty_interrupt>
+C:\Users\Sir_Jick\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/pcrt.S:25
+  vector __vector_5
+   a:	04 c0       	rjmp	.+8      	; 0x14 <__empty_interrupt>
+C:\Users\Sir_Jick\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/pcrt.S:26
+  vector __vector_6
+   c:	03 c0       	rjmp	.+6      	; 0x14 <__empty_interrupt>
+C:\Users\Sir_Jick\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/pcrt.S:27
+  vector __vector_7
+   e:	02 c0       	rjmp	.+4      	; 0x14 <__empty_interrupt>
+C:\Users\Sir_Jick\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/pcrt.S:28
+  vector __vector_8
+  10:	01 c0       	rjmp	.+2      	; 0x14 <__empty_interrupt>
+C:\Users\Sir_Jick\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/pcrt.S:29
+  vector __vector_9
+  12:	00 c0       	rjmp	.+0      	; 0x14 <__empty_interrupt>
+
+00000014 <__empty_interrupt>:
+__vector_1():
+C:\Users\Sir_Jick\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/pcrt.S:44
+  vector __vector_19
+
+  ;.text
+  .global __empty_interrupt
+__empty_interrupt:
+  reti
+  14:	18 95       	reti
+
+00000016 <__ctors_end>:
+__init():
+C:\Users\Sir_Jick\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/pcrt.S:50
+
+    .section .init0
+__init:
+
+    .section .init2
+    clr r1
+  16:	11 24       	eor	r1, r1
+
+00000018 <__do_copy_data>:
+__do_copy_data():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2409
+  18:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2410
+  1a:	a0 e6       	ldi	r26, 0x60	; 96
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2411
+  1c:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2412
+  1e:	e8 e6       	ldi	r30, 0x68	; 104
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2413
+  20:	f1 e0       	ldi	r31, 0x01	; 1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2414
+  22:	02 c0       	rjmp	.+4      	; 0x28 <__do_copy_data+0x10>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2417
+  24:	05 90       	lpm	r0, Z+
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2422
+  26:	0d 92       	st	X+, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2424
+  28:	a8 36       	cpi	r26, 0x68	; 104
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2425
+  2a:	b1 07       	cpc	r27, r17
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2426
+  2c:	d9 f7       	brne	.-10     	; 0x24 <__do_copy_data+0xc>
+
+0000002e <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+  2e:	20 e0       	ldi	r18, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  30:	a8 e6       	ldi	r26, 0x68	; 104
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+  32:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+  34:	01 c0       	rjmp	.+2      	; 0x38 <.do_clear_bss_start>
+
+00000036 <.do_clear_bss_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+  36:	1d 92       	st	X+, r1
+
+00000038 <.do_clear_bss_start>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+  38:	aa 36       	cpi	r26, 0x6A	; 106
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+  3a:	b2 07       	cpc	r27, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+  3c:	e1 f7       	brne	.-8      	; 0x36 <.do_clear_bss_loop>
+
+0000003e <main>:
+main():
+C:\Users\Sir_Jick\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/wiring.c:63
+ * @brief Initializing function that runs before setup().
+ */
+void init()
+{
+  // Turn on global interrupts
+  sei();
+  3e:	78 94       	sei
+pinMode():
+C:\Users\Sir_Jick\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/wiring_digital.c:31
+  if(mode == OUTPUT) // Pin as output
+    DDRB |= _BV(pin);
+
+  else // Pin as input or input pullup
+  {
+    DDRB &= ~_BV(pin); // Set pin as input
+  40:	87 b3       	in	r24, 0x17	; 23
+  42:	87 bb       	out	0x17, r24	; 23
+C:\Users\Sir_Jick\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/wiring_digital.c:33
+    if(mode == INPUT_PULLUP)
+      PORTB |= _BV(pin); // Enable pullup resistors
+  44:	88 b3       	in	r24, 0x18	; 24
+  46:	88 bb       	out	0x18, r24	; 24
+  48:	e0 e6       	ldi	r30, 0x60	; 96
+  4a:	f0 e0       	ldi	r31, 0x00	; 0
+  4c:	28 e6       	ldi	r18, 0x68	; 104
+  4e:	30 e0       	ldi	r19, 0x00	; 0
+C:\Users\Sir_Jick\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/wiring_digital.c:27
+ *        INPUT_PULLUP - set pin as input and enable internal pullup resistor
+ */
+void pinMode(uint8_t pin, uint8_t mode)
+{
+  if(mode == OUTPUT) // Pin as output
+    DDRB |= _BV(pin);
+  50:	61 e0       	ldi	r22, 0x01	; 1
+  52:	70 e0       	ldi	r23, 0x00	; 0
+setup():
+D:\PROJECTS\ARDUINO\Arduino-switcher-4channel\code\sketch_may10a/sketch_may10a.ino:9
+
+void setup() {
+  // پین سوئیچ را به عنوان ورودی و پین های رله را به عنوان خروجی تنظیم کنید
+  pinMode(switchPin, INPUT_PULLUP);
+  for (int i = 0; i < 4; ++i) {
+    pinMode(relayPins[i], OUTPUT);
+  54:	41 91       	ld	r20, Z+
+  56:	51 91       	ld	r21, Z+
+pinMode():
+C:\Users\Sir_Jick\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/wiring_digital.c:27
+  58:	87 b3       	in	r24, 0x17	; 23
+  5a:	db 01       	movw	r26, r22
+  5c:	02 c0       	rjmp	.+4      	; 0x62 <__SREG__+0x23>
+  5e:	aa 0f       	add	r26, r26
+  60:	bb 1f       	adc	r27, r27
+  62:	4a 95       	dec	r20
+  64:	e2 f7       	brpl	.-8      	; 0x5e <__SREG__+0x1f>
+  66:	8a 2b       	or	r24, r26
+  68:	87 bb       	out	0x17, r24	; 23
+setup():
+D:\PROJECTS\ARDUINO\Arduino-switcher-4channel\code\sketch_may10a/sketch_may10a.ino:8
+int relayState = 0; // متغیر وضعیت رله
+
+void setup() {
+  // پین سوئیچ را به عنوان ورودی و پین های رله را به عنوان خروجی تنظیم کنید
+  pinMode(switchPin, INPUT_PULLUP);
+  for (int i = 0; i < 4; ++i) {
+  6a:	2e 17       	cp	r18, r30
+  6c:	3f 07       	cpc	r19, r31
+  6e:	91 f7       	brne	.-28     	; 0x54 <__SREG__+0x15>
+loop():
+D:\PROJECTS\ARDUINO\Arduino-switcher-4channel\code\sketch_may10a/sketch_may10a.ino:17
+
+void loop() {
+  // اگر سوئیچ فشار داده شد
+  if (digitalRead(switchPin) == 0) {
+    // وضعیت رله را به روز کنید
+    relayState = (relayState + 1) % 4;
+  70:	c4 e0       	ldi	r28, 0x04	; 4
+  72:	d0 e0       	ldi	r29, 0x00	; 0
+digitalWrite():
+C:\Users\Sir_Jick\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/wiring_digital.c:49
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+  if(val)
+    PORTB |= _BV(pin);  // Set pin high
+  else
+    PORTB &= ~_BV(pin); // Set pin low
+  74:	21 e0       	ldi	r18, 0x01	; 1
+  76:	30 e0       	ldi	r19, 0x00	; 0
+digitalRead():
+C:\Users\Sir_Jick\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/wiring_digital.c:61
+ * @param pin The Arduino pin to read
+ * @return uint8_t State of the pin
+ */
+uint8_t digitalRead(uint8_t pin)
+{
+  return !!(PINB & _BV(pin));
+  78:	86 b3       	in	r24, 0x16	; 22
+loop():
+D:\PROJECTS\ARDUINO\Arduino-switcher-4channel\code\sketch_may10a/sketch_may10a.ino:17
+  7a:	80 91 68 00 	lds	r24, 0x0068	; 0x800068 <__data_end>
+  7e:	90 91 69 00 	lds	r25, 0x0069	; 0x800069 <__data_end+0x1>
+  82:	01 96       	adiw	r24, 0x01	; 1
+  84:	be 01       	movw	r22, r28
+  86:	49 d0       	rcall	.+146    	; 0x11a <__divmodhi4>
+  88:	90 93 69 00 	sts	0x0069, r25	; 0x800069 <__data_end+0x1>
+  8c:	80 93 68 00 	sts	0x0068, r24	; 0x800068 <__data_end>
+D:\PROJECTS\ARDUINO\Arduino-switcher-4channel\code\sketch_may10a/sketch_may10a.ino:20
+
+    // رله قبلی را خاموش کنید
+    if (relayState > 0) {
+  90:	18 16       	cp	r1, r24
+  92:	19 06       	cpc	r1, r25
+  94:	84 f4       	brge	.+32     	; 0xb6 <__SREG__+0x77>
+digitalWrite():
+C:\Users\Sir_Jick\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/wiring_digital.c:49
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+  if(val)
+    PORTB |= _BV(pin);  // Set pin high
+  else
+    PORTB &= ~_BV(pin); // Set pin low
+  96:	48 b3       	in	r20, 0x18	; 24
+loop():
+D:\PROJECTS\ARDUINO\Arduino-switcher-4channel\code\sketch_may10a/sketch_may10a.ino:21
+      digitalWrite(relayPins[relayState - 1], LOW);
+  98:	88 0f       	add	r24, r24
+  9a:	99 1f       	adc	r25, r25
+  9c:	fc 01       	movw	r30, r24
+  9e:	e2 5a       	subi	r30, 0xA2	; 162
+  a0:	ff 4f       	sbci	r31, 0xFF	; 255
+digitalWrite():
+C:\Users\Sir_Jick\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/wiring_digital.c:49
+  a2:	c9 01       	movw	r24, r18
+  a4:	00 80       	ld	r0, Z
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__SREG__+0x6d>
+  a8:	88 0f       	add	r24, r24
+  aa:	99 1f       	adc	r25, r25
+  ac:	0a 94       	dec	r0
+  ae:	e2 f7       	brpl	.-8      	; 0xa8 <__SREG__+0x69>
+  b0:	80 95       	com	r24
+  b2:	84 23       	and	r24, r20
+  b4:	88 bb       	out	0x18, r24	; 24
+C:\Users\Sir_Jick\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/wiring_digital.c:47
+ * @param val The state to set. Valid options are HIGH or LOW
+ */
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+  if(val)
+    PORTB |= _BV(pin);  // Set pin high
+  b6:	88 b3       	in	r24, 0x18	; 24
+loop():
+D:\PROJECTS\ARDUINO\Arduino-switcher-4channel\code\sketch_may10a/sketch_may10a.ino:25
+    }
+
+    // رله فعلی را روشن کنید
+    digitalWrite(relayPins[relayState], HIGH);
+  b8:	e0 91 68 00 	lds	r30, 0x0068	; 0x800068 <__data_end>
+  bc:	f0 91 69 00 	lds	r31, 0x0069	; 0x800069 <__data_end+0x1>
+  c0:	ee 0f       	add	r30, r30
+  c2:	ff 1f       	adc	r31, r31
+  c4:	e0 5a       	subi	r30, 0xA0	; 160
+  c6:	ff 4f       	sbci	r31, 0xFF	; 255
+digitalWrite():
+C:\Users\Sir_Jick\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/wiring_digital.c:47
+  c8:	a9 01       	movw	r20, r18
+  ca:	00 80       	ld	r0, Z
+  cc:	02 c0       	rjmp	.+4      	; 0xd2 <__SREG__+0x93>
+  ce:	44 0f       	add	r20, r20
+  d0:	55 1f       	adc	r21, r21
+  d2:	0a 94       	dec	r0
+  d4:	e2 f7       	brpl	.-8      	; 0xce <__SREG__+0x8f>
+  d6:	84 2b       	or	r24, r20
+  d8:	88 bb       	out	0x18, r24	; 24
+  da:	8d e2       	ldi	r24, 0x2D	; 45
+  dc:	91 e0       	ldi	r25, 0x01	; 1
+  de:	06 c0       	rjmp	.+12     	; 0xec <__SREG__+0xad>
+_delay_ms():
+c:\users\sir_jick\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:187
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  e0:	ef e5       	ldi	r30, 0x5F	; 95
+  e2:	f9 e0       	ldi	r31, 0x09	; 9
+  e4:	31 97       	sbiw	r30, 0x01	; 1
+  e6:	f1 f7       	brne	.-4      	; 0xe4 <__SREG__+0xa5>
+  e8:	00 c0       	rjmp	.+0      	; 0xea <__SREG__+0xab>
+  ea:	00 00       	nop
+  ec:	01 97       	sbiw	r24, 0x01	; 1
+delay():
+C:\Users\Sir_Jick\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/wiring.c:52
+ *
+ * @param ms The number of milliseconds to pause
+ */
+void delay(uint16_t ms)
+{
+  while(ms--)
+  ee:	c1 f7       	brne	.-16     	; 0xe0 <__SREG__+0xa1>
+digitalWrite():
+C:\Users\Sir_Jick\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/wiring_digital.c:49
+  else
+    PORTB &= ~_BV(pin); // Set pin low
+  f0:	48 b3       	in	r20, 0x18	; 24
+loop():
+D:\PROJECTS\ARDUINO\Arduino-switcher-4channel\code\sketch_may10a/sketch_may10a.ino:30
+
+    // منتظر 500 میلی ثانیه بمانید
+    delay(300);
+    // رله فعلی را خاموش کن
+    digitalWrite(relayPins[relayState], LOW);
+  f2:	e0 91 68 00 	lds	r30, 0x0068	; 0x800068 <__data_end>
+  f6:	f0 91 69 00 	lds	r31, 0x0069	; 0x800069 <__data_end+0x1>
+  fa:	ee 0f       	add	r30, r30
+  fc:	ff 1f       	adc	r31, r31
+  fe:	e0 5a       	subi	r30, 0xA0	; 160
+ 100:	ff 4f       	sbci	r31, 0xFF	; 255
+digitalWrite():
+C:\Users\Sir_Jick\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/wiring_digital.c:49
+ 102:	c9 01       	movw	r24, r18
+ 104:	00 80       	ld	r0, Z
+ 106:	02 c0       	rjmp	.+4      	; 0x10c <__SREG__+0xcd>
+ 108:	88 0f       	add	r24, r24
+ 10a:	99 1f       	adc	r25, r25
+ 10c:	0a 94       	dec	r0
+ 10e:	e2 f7       	brpl	.-8      	; 0x108 <__SREG__+0xc9>
+ 110:	80 95       	com	r24
+ 112:	84 23       	and	r24, r20
+ 114:	88 bb       	out	0x18, r24	; 24
+digitalRead():
+C:\Users\Sir_Jick\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/wiring_digital.c:61
+ * @param pin The Arduino pin to read
+ * @return uint8_t State of the pin
+ */
+uint8_t digitalRead(uint8_t pin)
+{
+  return !!(PINB & _BV(pin));
+ 116:	86 b3       	in	r24, 0x16	; 22
+ 118:	af cf       	rjmp	.-162    	; 0x78 <__SREG__+0x39>
+
+0000011a <__divmodhi4>:
+__divmodhi4():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1440
+ 11a:	97 fb       	bst	r25, 7
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1441
+ 11c:	07 2e       	mov	r0, r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1442
+ 11e:	16 f4       	brtc	.+4      	; 0x124 <__divmodhi4+0xa>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1443
+ 120:	00 94       	com	r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1444
+ 122:	06 d0       	rcall	.+12     	; 0x130 <__divmodhi4_neg1>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1446
+ 124:	77 fd       	sbrc	r23, 7
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1447
+ 126:	08 d0       	rcall	.+16     	; 0x138 <__divmodhi4_neg2>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1448
+ 128:	0b d0       	rcall	.+22     	; 0x140 <__udivmodhi4>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1449
+ 12a:	07 fc       	sbrc	r0, 7
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1450
+ 12c:	05 d0       	rcall	.+10     	; 0x138 <__divmodhi4_neg2>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1451
+ 12e:	3e f4       	brtc	.+14     	; 0x13e <__divmodhi4_exit>
+
+00000130 <__divmodhi4_neg1>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1454
+ 130:	90 95       	com	r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1455
+ 132:	81 95       	neg	r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1456
+ 134:	9f 4f       	sbci	r25, 0xFF	; 255
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1457
+ 136:	08 95       	ret
+
+00000138 <__divmodhi4_neg2>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1460
+ 138:	70 95       	com	r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1461
+ 13a:	61 95       	neg	r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1462
+ 13c:	7f 4f       	sbci	r23, 0xFF	; 255
+
+0000013e <__divmodhi4_exit>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1464
+ 13e:	08 95       	ret
+
+00000140 <__udivmodhi4>:
+__udivmodhi4():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1408
+ 140:	aa 1b       	sub	r26, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1409
+ 142:	bb 1b       	sub	r27, r27
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1410
+ 144:	51 e1       	ldi	r21, 0x11	; 17
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1411
+ 146:	07 c0       	rjmp	.+14     	; 0x156 <__udivmodhi4_ep>
+
+00000148 <__udivmodhi4_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1413
+ 148:	aa 1f       	adc	r26, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1414
+ 14a:	bb 1f       	adc	r27, r27
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1415
+ 14c:	a6 17       	cp	r26, r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1416
+ 14e:	b7 07       	cpc	r27, r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1417
+ 150:	10 f0       	brcs	.+4      	; 0x156 <__udivmodhi4_ep>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1418
+ 152:	a6 1b       	sub	r26, r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1419
+ 154:	b7 0b       	sbc	r27, r23
+
+00000156 <__udivmodhi4_ep>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1421
+ 156:	88 1f       	adc	r24, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1422
+ 158:	99 1f       	adc	r25, r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1423
+ 15a:	5a 95       	dec	r21
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1424
+ 15c:	a9 f7       	brne	.-22     	; 0x148 <__udivmodhi4_loop>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1425
+ 15e:	80 95       	com	r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1426
+ 160:	90 95       	com	r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1428
+ 162:	bc 01       	movw	r22, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1430
+ 164:	cd 01       	movw	r24, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1432
+ 166:	08 95       	ret

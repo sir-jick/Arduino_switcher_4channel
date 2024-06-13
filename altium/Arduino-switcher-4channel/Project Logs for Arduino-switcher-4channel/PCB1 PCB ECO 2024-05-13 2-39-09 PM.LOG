@@ -1,0 +1,16 @@
+Added Component: Designator=M1(Board Screw)
+Added Component: Designator=M2(Board Screw)
+Added Component: Designator=M3(Board Screw)
+Added Component: Designator=M4(Board Screw)
+Added Component: Designator=S1(PB-2pin)
+Add component (AddParameter): Name = "Designer"; Value = "Seyed Mohsen Ghasemian"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "E-mail"; Value = "picpars@gmail.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "www.picpars.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "WEB"; Value = "www.picpars.com"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Arduino_pin_5 Pin=S1-1
+Added Pin To Net: NetName=GND Pin=S1-2
+Added Member To Class: ClassName=Sheet1 Member=Component M1 Screw
+Added Member To Class: ClassName=Sheet1 Member=Component M2 Screw
+Added Member To Class: ClassName=Sheet1 Member=Component M3 Screw
+Added Member To Class: ClassName=Sheet1 Member=Component M4 Screw
+Added Member To Class: ClassName=Sheet1 Member=Component S1 PB-2pin

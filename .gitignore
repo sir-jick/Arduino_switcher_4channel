@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+
+
+# CNC / GRBL
+cnc
+CNC
+grbl
+GRBL
