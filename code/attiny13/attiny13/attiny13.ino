@@ -1,11 +1,11 @@
 const int switchPin = 0; // پین سوئیچ
-const int relayPins[] = {1, 2, 3, 4}; // آرایه پین های رله
+const int relayPins[] = {1, 2, 3}; // آرایه پین های رله
 int relayState = 0; // متغیر وضعیت رله
 
 void setup() {
   // پین سوئیچ را به عنوان ورودی و پین های رله را به عنوان خروجی تنظیم کنید
   pinMode(switchPin, INPUT_PULLUP);
-  for (int i = 0; i < 4; ++i) {
+  for (int i = 0; i < 3; ++i) {
     pinMode(relayPins[i], OUTPUT);
   }
 }
@@ -14,7 +14,7 @@ void loop() {
   // اگر سوئیچ فشار داده شد
   if (digitalRead(switchPin) == 0) {
     // وضعیت رله را به روز کنید
-    relayState = (relayState + 1) % 4;
+    relayState = (relayState + 1) % 3;
 
     // رله قبلی را خاموش کنید
     if (relayState > 0) {
