@@ -44,3 +44,12 @@ GRBL
 bill.xlsx
 Bill.xlsx
 Factura.xlsx
+
+
+# VS code settings
+.vscode
+.vscode/
+
+
+# Build for simulation in vs code Arduino extension
+code/Build
